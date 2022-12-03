@@ -10,6 +10,8 @@ const val ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const val ALPHA_LEN = 26
 
 class WordleViewModel(): ViewModel(){
+    val currPos = Position (0,0) //the game starts off at the left top corner (0,0)
+
     /***
      *  How is this used?:
      *      Provides functions to emit values to the flow'

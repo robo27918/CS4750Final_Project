@@ -10,5 +10,14 @@ class Position (var row:Int, var col:Int) {
     fun prevCol (){
         col -=1
     }
+    fun nextRow (){
+        row +=1
+        col = 0
+    }
+    fun reset (){
+        //simply set row and col to zero
+        row = 0
+        col =0
+    }
 
 }
